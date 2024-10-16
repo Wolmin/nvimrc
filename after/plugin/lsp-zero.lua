@@ -23,29 +23,6 @@ lsp_zero.extend_lspconfig({
 
 lsp_zero.setup({})
 
--- AUTOCOMPLETION
-local cmp = require('cmp')
-
-cmp.setup({
-  snippet = {
-    expand = function(args)
-      vim.snippet.expand(args.body)
-    end,
-  },
-  mapping = cmp.mapping.preset.insert({
-    ['<C-Space>'] = cmp.mapping.complete(),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),
-  }),
-
-  sources = cmp.config.sources({
-    { name = 'nvim_lsp' },  -- LSP source
-    { name = 'luasnip' },   -- Snippet source
-    { name = 'buffer' },    -- Buffer source (for text within the current file)
-    { name = 'path' },      -- Filesystem path source (useful for `:edit` and similar commands)
-  }),
-})
-
-
 -- MASON
 require("mason").setup()
 require("mason-lspconfig").setup({
