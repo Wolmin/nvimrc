@@ -45,9 +45,8 @@ dashboard.section.header.val = {
   "                      :----------===---------:::...................::         ",
 }
 
-dashboard.config.opts ={
-  margin = 50
-}
+dashboard.section.header.opts.hl = "SpecialKey"
+
 
 -- Send config to alpha
 alpha.setup(dashboard.opts)
