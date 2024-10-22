@@ -1,6 +1,6 @@
 require('lualine').setup({
   options = {
-    theme = 'ayu_mirage',
+    theme = 'gruvbox',
     globalstatus = true,
   },
 })

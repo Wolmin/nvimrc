@@ -30,6 +30,8 @@ vim.opt.colorcolumn = "160"
 
 vim.g.mapleader = " "
 
+vim.opt.clipboard = "unnamedplus"
+
 -- add binaries installed by mason.nvim to path
 local is_windows = vim.fn.has "win32" ~= 0
 local sep = is_windows and "\\" or "/"
