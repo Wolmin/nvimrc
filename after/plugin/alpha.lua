@@ -45,7 +45,7 @@ dashboard.section.header.val = {
   "                      :----------===---------:::...................::         ",
 }
 
-dashboard.section.header.opts.hl = "SpecialKey"
+dashboard.section.header.opts.hl = "VisualNC"
 dashboard.section.buttons.val = {
   dashboard.button("<C-n>", " File Tree", ":NvimTreeToggle<CR>"),
 }
