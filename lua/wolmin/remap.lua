@@ -6,10 +6,4 @@ vim.keymap.set("v", "<C-c>", "")
 
 vim.keymap.set({"n", "v"}, "<leader>hh", function() require('toggleterm.terminal').Terminal:new({direction = "horizontal"}):toggle() end)
 
-vim.keymap.set({"n", "v"}, "<leader>hh", ":ToggleTerm direction=horizontal<CR>")
-vim.keymap.set({"n", "v"}, "<leader>v", ":ToggleTerm direction=vertical<CR>")
-vim.keymap.set({"n", "v"}, "<leader>hf", ":ToggleTerm direction=float<CR>")
-
 vim.keymap.set("v", "<C-c>", "y")
-
-print("!")
