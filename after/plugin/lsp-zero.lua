@@ -34,14 +34,17 @@ require("mason-lspconfig").setup({
     -- LUA
     "lua_ls",
 
-    -- TYPESCRIPT
+    -- TYPESCRIPT/REACT/ETC
     "ts_ls",
+    "cssmodules_ls",
+    "cssls",
 
     -- PYTHON
     "pyright",
 
     -- RUST
     "rust_analyzer",
+
   }
 })
 
@@ -147,6 +150,9 @@ lspconfig.ts_ls.setup {
     },
   },
 }
+
+lspconfig.cssmodules_ls.setup({})
+lspconfig.cssls.setup({})
 
 -- RUST
 lspconfig.rust_analyzer.setup {
