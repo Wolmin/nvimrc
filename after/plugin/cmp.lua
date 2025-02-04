@@ -10,6 +10,7 @@ cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<C-CR'] = cmp.mapping.abort(),
     ['A-Up'] = cmp.mapping.scroll_docs(-4), -- TODO: Fix :p
     ['A-Down'] = cmp.mapping.scroll_docs(4),
   }),
