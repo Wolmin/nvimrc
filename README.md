@@ -21,4 +21,5 @@ There are multiple dependencies for different working envs. Those include:
 - `npm` and `yarn` for JS/TS
 - `cargo` for Rust
 
-Those are pretty straightforward: just head to install page for your environment and follow instructions.
+Those are pretty straightforward: just head to install page for your environment and follow instructions.  
+For image preview, see [media_files](https://github.com/nvim-telescope/telescope-media-files.nvim) plugin extension.
