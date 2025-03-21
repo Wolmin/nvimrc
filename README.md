@@ -23,3 +23,11 @@ There are multiple dependencies for different working envs. Those include:
 
 Those are pretty straightforward: just head to install page for your environment and follow instructions.  
 For image preview, see [media_files](https://github.com/nvim-telescope/telescope-media-files.nvim) plugin extension.
+Other than those, there also dependencies for certain plugins, the most notable being the [image.nvim](https://github.com/3rd/image.nvim) - please visit the plugin doc for more details.
+
+## Clipboard
+
+Just install xclip for native clipboard support:
+```sh
+$ sudo apt install xclip
+```
