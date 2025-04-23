@@ -82,7 +82,8 @@ lspconfig.gopls.setup({
   end,
 })
 
-lspconfig.golangci_lint_ls.setup({})
+-- disable golangci_lint_ls 
+-- lspconfig.golangci_lint_ls.setup({})
 
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = "*.go",
