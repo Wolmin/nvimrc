@@ -1,5 +1,11 @@
 local lsp_zero = require('lsp-zero')
 
+vim.diagnostic.config({
+  float = {
+    border = "rounded",
+  },
+})
+
 local lsp_attach = function(client, bufrn)
   local opts = { buffer = bufnr }
 
@@ -13,6 +19,9 @@ local lsp_attach = function(client, bufrn)
   vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
   vim.keymap.set({ 'n', 'x', 'i' }, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
   vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+  vim.keymap.set('n', '<leader>e', function()
+    vim.diagnostic.open_float(nil, { focus = true, scope = "cursor" })
+  end, opts)
 end
 
 lsp_zero.extend_lspconfig({
@@ -82,7 +91,6 @@ lspconfig.gopls.setup({
   end,
 })
 
--- disable golangci_lint_ls 
 -- lspconfig.golangci_lint_ls.setup({})
 
 vim.api.nvim_create_autocmd("BufWritePre", {
