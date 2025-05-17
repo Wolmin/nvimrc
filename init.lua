@@ -1,2 +1,2 @@
-require("wolmin")
 require("config.lazy")
+require("wolmin")
