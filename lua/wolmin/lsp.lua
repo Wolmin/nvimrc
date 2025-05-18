@@ -24,3 +24,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end, opts)
   end
 })
+
+
+-- Enable LSPs 
+vim.lsp.enable("luals")
+vim.lsp.enable("gopls")
+vim.lsp.enable("ts_ls")
+vim.lsp.enable("pyright")
+vim.lsp.enable("rust_analyzer")
+vim.lsp.enable("cssmodules_ls")
+vim.lsp.enable("cssls")
+
