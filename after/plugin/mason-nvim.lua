@@ -3,7 +3,6 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     -- GO
     "gopls",
-    "golangci_lint_ls",
 
     -- LUA
     "lua_ls",
@@ -12,6 +11,9 @@ require("mason-lspconfig").setup({
     "ts_ls",
     "cssmodules_ls",
     "cssls",
+
+    -- HTML
+    "html",
 
     -- PYTHON
     "pyright",
