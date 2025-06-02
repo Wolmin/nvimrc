@@ -35,4 +35,5 @@ vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("cssmodules_ls")
 vim.lsp.enable("cssls")
 vim.lsp.enable("html")
+vim.lsp.enable("csharp_ls")
 
