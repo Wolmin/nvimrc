@@ -26,5 +26,7 @@ require("mason-lspconfig").setup({
     -- If in trouble, install csharp-ls manually, keeping in mind that correct dotnet SDK version needs to be installed.
     -- 0.16.0 is configured for dotnet 8.0
     "csharp_ls@0.16.0",
+
+    "elixirls",
   }
 })
