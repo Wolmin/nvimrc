@@ -25,6 +25,11 @@ Those are pretty straightforward: just head to install page for your environment
 For image preview, see [media_files](https://github.com/nvim-telescope/telescope-media-files.nvim) plugin extension.
 Other than those, there also dependencies for certain plugins, the most notable being the [image.nvim](https://github.com/3rd/image.nvim) - please visit the plugin doc for more details.
 
+### Love2D / other addons
+For a pleasant Love2D experience, install the following addon into the `~/.local/share/LuaAddons`:
+
+`git clone https://github.com/LuaCATS/love2d.git`
+
 ## Clipboard
 
 Just install xclip for native clipboard support:
