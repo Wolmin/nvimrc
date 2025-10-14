@@ -28,5 +28,7 @@ require("mason-lspconfig").setup({
     "csharp_ls@0.16.0",
 
     "elixirls",
+
+    "dockerls",
   }
 })
