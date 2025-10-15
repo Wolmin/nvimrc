@@ -13,7 +13,25 @@ require("telescope").setup({
         ["q"] = require("telescope.actions").close,
       },
     },
-    file_ignore_patterns = { "node_modules" },
+    file_ignore_patterns = { 'node_modules', '.git/.*' },
+    vimgrep_arguments = {
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case',
+      '-u' -- thats the new thing
+    }
+  },
+  pickers = {
+    live_grep = {
+      file_ignore_patterns = { 'node_modules', '.git/.*' },
+      additional_args = function(_)
+        return { "--hidden" }
+      end
+    }
   },
   extensions = {
     media_files = {

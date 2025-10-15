@@ -20,6 +20,7 @@ There are multiple dependencies for different working envs. Those include:
 - `go` SDK for Golang
 - `npm` and `yarn` for JS/TS
 - `cargo` for Rust
+- `ripgrep` for telescope live grep
 
 Those are pretty straightforward: just head to install page for your environment and follow instructions.  
 For image preview, see [media_files](https://github.com/nvim-telescope/telescope-media-files.nvim) plugin extension.
